@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533C5919BF4776AFD9485834 /* Pods_ProximityFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94854A2A035162AF80C46183 /* Pods_ProximityFinder.framework */; };
+		918438AE2A1AD53C00877452 /* ClosestPairCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918438AD2A1AD53C00877452 /* ClosestPairCalculator.swift */; };
+		918438B02A1AD55E00877452 /* ClosestPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918438AF2A1AD55E00877452 /* ClosestPair.swift */; };
 		91F439452A15733000DD3A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F439442A15733000DD3A20 /* AppDelegate.swift */; };
 		91F439472A15733000DD3A20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F439462A15733000DD3A20 /* SceneDelegate.swift */; };
 		91F439492A15733000DD3A20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F439482A15733000DD3A20 /* ViewController.swift */; };
@@ -16,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F0F7C32FA7DEE35AF2FE464 /* Pods-ProximityFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityFinder.debug.xcconfig"; path = "Target Support Files/Pods-ProximityFinder/Pods-ProximityFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		71BF4A177BAB06D8BFFCBDCE /* Pods-ProximityFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityFinder.release.xcconfig"; path = "Target Support Files/Pods-ProximityFinder/Pods-ProximityFinder.release.xcconfig"; sourceTree = "<group>"; };
+		918438AD2A1AD53C00877452 /* ClosestPairCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestPairCalculator.swift; sourceTree = "<group>"; };
+		918438AF2A1AD55E00877452 /* ClosestPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestPair.swift; sourceTree = "<group>"; };
 		91F439412A15733000DD3A20 /* ProximityFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximityFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F439442A15733000DD3A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91F439462A15733000DD3A20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,7 @@
 		91F4394D2A15733200DD3A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91F439502A15733200DD3A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91F439522A15733200DD3A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94854A2A035162AF80C46183 /* Pods_ProximityFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProximityFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,56 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				533C5919BF4776AFD9485834 /* Pods_ProximityFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E3218AAFC58FC97ED93D28A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F0F7C32FA7DEE35AF2FE464 /* Pods-ProximityFinder.debug.xcconfig */,
+				71BF4A177BAB06D8BFFCBDCE /* Pods-ProximityFinder.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		918438AC2A1AD50300877452 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				918438AD2A1AD53C00877452 /* ClosestPairCalculator.swift */,
+				918438AF2A1AD55E00877452 /* ClosestPair.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		918438B12A1AD61200877452 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91F4394F2A15733200DD3A20 /* LaunchScreen.storyboard */,
+				91F4394A2A15733000DD3A20 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		918438B22A1AD61C00877452 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91F439482A15733000DD3A20 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		91F439382A15733000DD3A20 = {
 			isa = PBXGroup;
 			children = (
 				91F439432A15733000DD3A20 /* ProximityFinder */,
 				91F439422A15733000DD3A20 /* Products */,
+				2E3218AAFC58FC97ED93D28A /* Pods */,
+				A62F29DF6E0B192EF5CC2B1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +103,23 @@
 		91F439432A15733000DD3A20 /* ProximityFinder */ = {
 			isa = PBXGroup;
 			children = (
+				918438B12A1AD61200877452 /* View */,
+				918438AC2A1AD50300877452 /* Model */,
+				918438B22A1AD61C00877452 /* Controller */,
 				91F439442A15733000DD3A20 /* AppDelegate.swift */,
 				91F439462A15733000DD3A20 /* SceneDelegate.swift */,
-				91F439482A15733000DD3A20 /* ViewController.swift */,
-				91F4394A2A15733000DD3A20 /* Main.storyboard */,
 				91F4394D2A15733200DD3A20 /* Assets.xcassets */,
-				91F4394F2A15733200DD3A20 /* LaunchScreen.storyboard */,
 				91F439522A15733200DD3A20 /* Info.plist */,
 			);
 			path = ProximityFinder;
+			sourceTree = "<group>";
+		};
+		A62F29DF6E0B192EF5CC2B1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94854A2A035162AF80C46183 /* Pods_ProximityFinder.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +129,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91F439552A15733200DD3A20 /* Build configuration list for PBXNativeTarget "ProximityFinder" */;
 			buildPhases = (
+				5EBCA2A449972BD3103E18D5 /* [CP] Check Pods Manifest.lock */,
 				91F4393D2A15733000DD3A20 /* Sources */,
 				91F4393E2A15733000DD3A20 /* Frameworks */,
 				91F4393F2A15733000DD3A20 /* Resources */,
+				B2B91785DAC85DD908D68695 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +190,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5EBCA2A449972BD3103E18D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProximityFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2B91785DAC85DD908D68695 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityFinder/Pods-ProximityFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProximityFinder/Pods-ProximityFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProximityFinder/Pods-ProximityFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		91F4393D2A15733000DD3A20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				91F439492A15733000DD3A20 /* ViewController.swift in Sources */,
+				918438AE2A1AD53C00877452 /* ClosestPairCalculator.swift in Sources */,
 				91F439452A15733000DD3A20 /* AppDelegate.swift in Sources */,
 				91F439472A15733000DD3A20 /* SceneDelegate.swift in Sources */,
+				918438B02A1AD55E00877452 /* ClosestPair.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +383,7 @@
 		};
 		91F439562A15733200DD3A20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F0F7C32FA7DEE35AF2FE464 /* Pods-ProximityFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +412,7 @@
 		};
 		91F439572A15733200DD3A20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71BF4A177BAB06D8BFFCBDCE /* Pods-ProximityFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
