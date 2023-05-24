@@ -8,28 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		533C5919BF4776AFD9485834 /* Pods_ProximityFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94854A2A035162AF80C46183 /* Pods_ProximityFinder.framework */; };
+		9126D8CE2A1EAE18004701BB /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126D8CA2A1EAE18004701BB /* CustomUIView.swift */; };
+		9126D8D12A1EAE18004701BB /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126D8CD2A1EAE18004701BB /* CustomBlurView.swift */; };
+		912CE3A02A1E29D700D8738C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 912CE39F2A1E29D700D8738C /* Localizable.strings */; };
+		912CE3A22A1E29EB00D8738C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912CE3A12A1E29EB00D8738C /* String.swift */; };
 		918438AE2A1AD53C00877452 /* ClosestPairCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918438AD2A1AD53C00877452 /* ClosestPairCalculator.swift */; };
 		918438B02A1AD55E00877452 /* ClosestPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918438AF2A1AD55E00877452 /* ClosestPair.swift */; };
+		919D0D632A1EBE7900044915 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919D0D622A1EBE7900044915 /* UIView.swift */; };
+		91E2D6C62A1C19CC0047E85F /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2D6C52A1C19CC0047E85F /* LaunchScreenViewController.swift */; };
+		91ED1C522A1C01A50095DDF2 /* LaunchScreen-Dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 91ED1C512A1C01A50095DDF2 /* LaunchScreen-Dark.json */; };
+		91ED1C542A1C01AA0095DDF2 /* LaunchScreen-Light.json in Resources */ = {isa = PBXBuildFile; fileRef = 91ED1C532A1C01AA0095DDF2 /* LaunchScreen-Light.json */; };
 		91F439452A15733000DD3A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F439442A15733000DD3A20 /* AppDelegate.swift */; };
 		91F439472A15733000DD3A20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F439462A15733000DD3A20 /* SceneDelegate.swift */; };
-		91F439492A15733000DD3A20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F439482A15733000DD3A20 /* ViewController.swift */; };
+		91F439492A15733000DD3A20 /* ProximityFinderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F439482A15733000DD3A20 /* ProximityFinderController.swift */; };
 		91F4394C2A15733000DD3A20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F4394A2A15733000DD3A20 /* Main.storyboard */; };
 		91F4394E2A15733200DD3A20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F4394D2A15733200DD3A20 /* Assets.xcassets */; };
-		91F439512A15733200DD3A20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F4394F2A15733200DD3A20 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F0F7C32FA7DEE35AF2FE464 /* Pods-ProximityFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityFinder.debug.xcconfig"; path = "Target Support Files/Pods-ProximityFinder/Pods-ProximityFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		71BF4A177BAB06D8BFFCBDCE /* Pods-ProximityFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityFinder.release.xcconfig"; path = "Target Support Files/Pods-ProximityFinder/Pods-ProximityFinder.release.xcconfig"; sourceTree = "<group>"; };
+		9126D8CA2A1EAE18004701BB /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		9126D8CD2A1EAE18004701BB /* CustomBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
+		912CE39F2A1E29D700D8738C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		912CE3A12A1E29EB00D8738C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		918438AD2A1AD53C00877452 /* ClosestPairCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestPairCalculator.swift; sourceTree = "<group>"; };
 		918438AF2A1AD55E00877452 /* ClosestPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosestPair.swift; sourceTree = "<group>"; };
+		919D0D622A1EBE7900044915 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		91E2D6C52A1C19CC0047E85F /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		91ED1C512A1C01A50095DDF2 /* LaunchScreen-Dark.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "LaunchScreen-Dark.json"; sourceTree = "<group>"; };
+		91ED1C532A1C01AA0095DDF2 /* LaunchScreen-Light.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "LaunchScreen-Light.json"; sourceTree = "<group>"; };
 		91F439412A15733000DD3A20 /* ProximityFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximityFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F439442A15733000DD3A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91F439462A15733000DD3A20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		91F439482A15733000DD3A20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91F439482A15733000DD3A20 /* ProximityFinderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityFinderController.swift; sourceTree = "<group>"; };
 		91F4394B2A15733000DD3A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91F4394D2A15733200DD3A20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		91F439502A15733200DD3A20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91F439522A15733200DD3A20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94854A2A035162AF80C46183 /* Pods_ProximityFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProximityFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -52,8 +66,16 @@
 				3F0F7C32FA7DEE35AF2FE464 /* Pods-ProximityFinder.debug.xcconfig */,
 				71BF4A177BAB06D8BFFCBDCE /* Pods-ProximityFinder.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		912CE39E2A1E29BF00D8738C /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				912CE3A12A1E29EB00D8738C /* String.swift */,
+				919D0D622A1EBE7900044915 /* UIView.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		918438AC2A1AD50300877452 /* Model */ = {
@@ -68,7 +90,6 @@
 		918438B12A1AD61200877452 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				91F4394F2A15733200DD3A20 /* LaunchScreen.storyboard */,
 				91F4394A2A15733000DD3A20 /* Main.storyboard */,
 			);
 			path = View;
@@ -77,9 +98,31 @@
 		918438B22A1AD61C00877452 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				91F439482A15733000DD3A20 /* ViewController.swift */,
+				91F439482A15733000DD3A20 /* ProximityFinderController.swift */,
+				91E2D6C52A1C19CC0047E85F /* LaunchScreenViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		91ED1C4F2A1C01530095DDF2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9126D8CD2A1EAE18004701BB /* CustomBlurView.swift */,
+				9126D8CA2A1EAE18004701BB /* CustomUIView.swift */,
+				912CE39F2A1E29D700D8738C /* Localizable.strings */,
+				912CE39E2A1E29BF00D8738C /* Extentions */,
+				91ED1C502A1C01750095DDF2 /* LottieAnimation */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		91ED1C502A1C01750095DDF2 /* LottieAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				91ED1C512A1C01A50095DDF2 /* LaunchScreen-Dark.json */,
+				91ED1C532A1C01AA0095DDF2 /* LaunchScreen-Light.json */,
+			);
+			path = LottieAnimation;
 			sourceTree = "<group>";
 		};
 		91F439382A15733000DD3A20 = {
@@ -103,11 +146,12 @@
 		91F439432A15733000DD3A20 /* ProximityFinder */ = {
 			isa = PBXGroup;
 			children = (
-				918438B12A1AD61200877452 /* View */,
 				918438AC2A1AD50300877452 /* Model */,
+				918438B12A1AD61200877452 /* View */,
 				918438B22A1AD61C00877452 /* Controller */,
 				91F439442A15733000DD3A20 /* AppDelegate.swift */,
 				91F439462A15733000DD3A20 /* SceneDelegate.swift */,
+				91ED1C4F2A1C01530095DDF2 /* Utils */,
 				91F4394D2A15733200DD3A20 /* Assets.xcassets */,
 				91F439522A15733200DD3A20 /* Info.plist */,
 			);
@@ -182,9 +226,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91F439512A15733200DD3A20 /* LaunchScreen.storyboard in Resources */,
 				91F4394E2A15733200DD3A20 /* Assets.xcassets in Resources */,
+				912CE3A02A1E29D700D8738C /* Localizable.strings in Resources */,
 				91F4394C2A15733000DD3A20 /* Main.storyboard in Resources */,
+				91ED1C542A1C01AA0095DDF2 /* LaunchScreen-Light.json in Resources */,
+				91ED1C522A1C01A50095DDF2 /* LaunchScreen-Dark.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,10 +283,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91F439492A15733000DD3A20 /* ViewController.swift in Sources */,
+				919D0D632A1EBE7900044915 /* UIView.swift in Sources */,
+				91F439492A15733000DD3A20 /* ProximityFinderController.swift in Sources */,
+				9126D8CE2A1EAE18004701BB /* CustomUIView.swift in Sources */,
+				9126D8D12A1EAE18004701BB /* CustomBlurView.swift in Sources */,
 				918438AE2A1AD53C00877452 /* ClosestPairCalculator.swift in Sources */,
 				91F439452A15733000DD3A20 /* AppDelegate.swift in Sources */,
 				91F439472A15733000DD3A20 /* SceneDelegate.swift in Sources */,
+				912CE3A22A1E29EB00D8738C /* String.swift in Sources */,
+				91E2D6C62A1C19CC0047E85F /* LaunchScreenViewController.swift in Sources */,
 				918438B02A1AD55E00877452 /* ClosestPair.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +305,6 @@
 				91F4394B2A15733000DD3A20 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		91F4394F2A15733200DD3A20 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				91F439502A15733200DD3A20 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -387,13 +430,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X8S7NK9ZBV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProximityFinder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Proximity Finder";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -416,13 +462,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X8S7NK9ZBV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProximityFinder/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Proximity Finder";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
