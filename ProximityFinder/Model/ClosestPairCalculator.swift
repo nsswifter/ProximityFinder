@@ -129,10 +129,11 @@ struct ClosestPairCalculator {
         
         // Sort the points based on their y-coordinate.
         let sortedPoints = points.sorted { $0.y < $1.y }
+        guard sortedPoints.count - 1 > 0 else { return nil }
         
         // Iterate through each point pair, checking their distances.
-        for i in 0..<sortedPoints.count-1 {
-            for j in i+1..<min(i+8, sortedPoints.count) {
+        for i in 0..<sortedPoints.count - 1 {
+            for j in i + 1..<min(i + 8, sortedPoints.count) {
                 // Calculate the distance between the current point pair.
                 let dist = distance(from: sortedPoints[i], to: sortedPoints[j])
                 
@@ -143,7 +144,6 @@ struct ClosestPairCalculator {
                 }
             }
         }
-        
         return closestPair
     }
 }

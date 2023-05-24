@@ -27,8 +27,6 @@ class ProximityFinderController: UIViewController {
     }
     
     @IBAction func UpdateLabelValue(_ sender: UISlider) {
-        print(sender.value)
-        print(lroundf(sender.value))
         pointsCountLable.text = String(lroundf(sender.value) + 1)
         pointsCount = lroundf(sender.value)
         
