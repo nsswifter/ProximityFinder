@@ -254,10 +254,11 @@
                                 <rect key="frame" x="374" y="4" width="36" height="36.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="tintColor" red="0.57315047073191916" green="0.52453017871248586" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.54939388701476832" green="0.54101452579233777" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="info.bubble.fill" catalog="system" symbolScale="large"/>
+                                    <imageReference key="image" image="book.closed.fill" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
                                 </state>
                                 <connections>
                                     <segue destination="YYX-c5-Q9Q" kind="presentation" id="gXO-Hv-4hh"/>
@@ -343,6 +344,7 @@
     <resources>
         <image name="LaunchScreenBackground" width="606" height="1021"/>
         <image name="ProximityFinderBackground" width="629" height="1005"/>
+        <image name="book.closed.fill" catalog="system" width="115" height="128"/>
         <image name="info.bubble.fill" catalog="system" width="128" height="110"/>
         <namedColor name="BlurBackground">
             <color red="0.90700000524520874" green="0.87099999189376831" blue="1" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
