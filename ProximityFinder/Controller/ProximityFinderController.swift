@@ -11,16 +11,20 @@ class ProximityFinderController: UIViewController {
 
     @IBOutlet weak var coordinatePlane: UIView!
     
+    @IBOutlet weak var slider: UISlider!
+    
     @IBOutlet weak var pointsCountLable: UILabel!
     @IBOutlet weak var closestDistanceLabel: UILabel!
     
     let closestPairCalculator = ClosestPairCalculator()
     
     var points: [CGPoint] = []
-    var pointsCount = 24
+    var pointsCount = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setup()
         
         generatePoints()
         calculatePoints()
@@ -36,14 +40,20 @@ class ProximityFinderController: UIViewController {
         generatePoints()
         calculatePoints()
     }
+    
+    func setup() {
+        slider.setThumbImage(UIImage(named: "thumb".localized), for: .normal)
+        pointsCount = lroundf(slider.value)
+    }
 
     func generatePoints() {
         for _ in 0...pointsCount {
-            points.append(CGPoint(x: Int.random(in: 0...280), y: Int.random(in: 0...280)))
+            points.append(CGPoint(x: Int.random(in: 0...Int(coordinatePlane.bounds.width)),
+                                  y: Int.random(in: 0...Int(coordinatePlane.bounds.height))))
         }
         
         coordinatePlane.drawPoint(from: points, withColor: traitCollection.userInterfaceStyle == .light ?
-            .black : .gray)
+            .black : .white)
     }
     
     func calculatePoints() {
@@ -51,7 +61,14 @@ class ProximityFinderController: UIViewController {
         
         if let closestPair {
             coordinatePlane.drawPoint(from: [closestPair.point1, closestPair.point2], withColor: .red)
-            closestDistanceLabel.text = String(format: "%.2f", closestPair.distance)
+            
+            var distance = String(format: "accuracy_of_one_decimal".localized, closestPair.distance)
+            
+            if distance.hasSuffix("whole_number_suffix".localized) {
+                distance.removeLast(2)
+            }
+            
+            closestDistanceLabel.text = distance
         }
     }
 }
