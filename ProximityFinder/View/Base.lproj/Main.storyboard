@@ -248,8 +248,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Proximity Finder" id="1z6-6Q-UnK">
-                        <barButtonItem key="rightBarButtonItem" id="X6z-3v-odU">
-                            <imageReference key="image" image="info.bubble.fill" catalog="system" symbolScale="large"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="X6z-3v-odU">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="VGg-OC-Oal">
                                 <rect key="frame" x="374" y="3" width="36" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -288,9 +287,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="82z-HI-x5d">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82z-HI-x5d">
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZKG-fb-Cgi">
@@ -423,10 +421,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Gcg-ef-GdY" firstAttribute="width" secondItem="kpo-sk-ayo" secondAttribute="width" id="K6o-dD-EoM"/>
+                            <constraint firstItem="82z-HI-x5d" firstAttribute="leading" secondItem="kpo-sk-ayo" secondAttribute="leading" id="KXh-vO-8Be"/>
                             <constraint firstItem="ZKG-fb-Cgi" firstAttribute="top" secondItem="ej8-fB-Awp" secondAttribute="top" constant="10" id="cJs-Yz-soW"/>
                             <constraint firstItem="ej8-fB-Awp" firstAttribute="bottom" secondItem="ZKG-fb-Cgi" secondAttribute="bottom" constant="10" id="hzb-8K-7Ag"/>
                             <constraint firstItem="ZKG-fb-Cgi" firstAttribute="leading" secondItem="ej8-fB-Awp" secondAttribute="leading" id="ney-Ny-up6"/>
+                            <constraint firstItem="82z-HI-x5d" firstAttribute="top" secondItem="kpo-sk-ayo" secondAttribute="top" id="o5m-Ab-mFI"/>
+                            <constraint firstItem="82z-HI-x5d" firstAttribute="bottom" secondItem="kpo-sk-ayo" secondAttribute="bottom" id="vUm-bW-yZE"/>
                             <constraint firstItem="ej8-fB-Awp" firstAttribute="trailing" secondItem="ZKG-fb-Cgi" secondAttribute="trailing" id="x9f-om-Dnd"/>
+                            <constraint firstItem="82z-HI-x5d" firstAttribute="trailing" secondItem="kpo-sk-ayo" secondAttribute="trailing" id="yNp-zJ-3nt"/>
                         </constraints>
                     </view>
                     <connections>
@@ -501,7 +503,6 @@
         <image name="arrowshape.turn.up.backward.fill" catalog="system" width="128" height="104"/>
         <image name="book.closed.fill" catalog="system" width="115" height="128"/>
         <image name="iOSDevelopment" width="2034" height="588"/>
-        <image name="info.bubble.fill" catalog="system" width="32" height="32"/>
         <namedColor name="AccentColor">
             <color red="0.082000002264976501" green="0.035000000149011612" blue="0.36000001430511475" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
