@@ -1,6 +1,17 @@
 # ProximityFinder
 The project implements the `Nearest Pair of Points algorithm` that finds the closest pair of points in a 2D screen using a time complexity of `O(n log n)`. The algorithm is implemented in an iOS application using the `MVC` architectural pattern.
 
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Dependencies](#dependencies)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Contact](#contact)
+
 ## Features
 
 - Calculates the Euclidean distance between two points in a 2D coordinate system.
@@ -115,7 +126,7 @@ Contributions to the project are welcome. If you find any issues or have suggest
 
 ## Acknowledgments
 
-The Nearest Pair of Points algorithm project is developed by [Mehdi Karami](https://www.github.com/mehdi2003karami).
+The `Nearest Pair of Points` algorithm project is developed by [Mehdi Karami](https://www.github.com/mehdi2003karami).
 
 ## Contact
 
