@@ -6,6 +6,7 @@ The project implements the `Nearest Pair of Points algorithm` that finds the clo
 
 ## Table of Contents
 
+- [Overview](#overview)
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -14,6 +15,22 @@ The project implements the `Nearest Pair of Points algorithm` that finds the clo
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
+
+## Overview
+
+This is an innovative iOS application designed to demonstrate the power of efficient algorithms in solving real-world problems. This app showcases an algorithm that efficiently finds the nearest pair of points in a 2D screen with an impressive time complexity of `O(nlogn)`, where `n` is the number of points. 
+
+<p> <img src="Documentation/TimeComplexityGraph.png" style="border: 1px solid purple" width="250" height="250"/> </p>
+
+Upon launching the app, you'll be greeted with a captivating `Lottie` view displaying a mesmerizing launch screen video, setting the stage for an engaging and interactive experience. As the animation fades, you'll find yourself in the heart of the application, ready to explore the world of point optimization.
+
+In the center of the screen, you'll notice a captivating view filled with points scattered across the 2D plane. These points represent a set of coordinates that you can manipulate using a convenient slider located below. Adjusting the slider will dynamically generate a new set of points, allowing you to explore the algorithm's efficiency with varying input sizes.
+
+With each adjustment, the app springs to life, immediately recalculating and displaying the nearest pair of points in real-time. The distance between the two closest points is prominently showcased, providing you with a visual representation of the algorithm's effectiveness.
+
+Curious to learn more? Just tap the button at the top of the screen to access a dedicated documentation view. Here, you'll find detailed explanations and insights into how the algorithm works its magic, empowering you with a deeper understanding of the underlying principles. Explore the algorithm's time complexity, the mechanisms behind the nearest pair detection, and gain a greater appreciation for the significance of efficient algorithms in various fields.
+
+Whether you're a curious learner, an algorithm enthusiast, or a student of algorithm design, the Nearest Pair Finder app offers an engaging, visually captivating, and educational experience. Dive into the world of efficient algorithms, witness their impact firsthand, and unlock new dimensions of computational problem-solving.
 
 ## Features
 
@@ -40,7 +57,7 @@ To run the Nearest Pair of Points algorithm application, follow these steps:
 4. Use the slider to set the count of points on the screen.
 5. The application will generate random points and find the closest pair.
 6. The closest pair of points will be displayed on the screen with their distance.
-7. You can tap the `info` button on the top leading of the screen to view more information about the algorithm and the application.
+7. You can tap the `documentation` button on the top leading of the screen to view more information about the algorithm and the application.
 
 ## Project Structure
 
