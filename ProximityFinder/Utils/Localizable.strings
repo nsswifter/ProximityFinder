@@ -19,6 +19,8 @@
 // Segues Identifier
 "segue_to_proximityFinderVC" = "ProximityFinder";
 
+
+// Detail View Controller Overview Section Texts
 "overview_title" = "Proximity Finder Overview";
 
 "overview_description" = "We'll explore how the algorithm efficiently finds the nearest pair of points in a 2D screen. The Closest Pair algorithm is designed to have a time complexity of O(n log n) with a divide-and-conquer approach, making it more efficient than a brute force approach.";
