@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  ProximityFinder
+
+  Created by Mehdi Karami on 5/24/23.
+  
+*/
+
+// Format Strings
+"accuracy_of_one_decimal" = "%.1f";
+"whole_number_suffix" = ".0";
+
+// Assets Name
+"thumb" = "Thumb";
+
+"lottie_launch_screen_light" = "LaunchScreen-Light";
+"lottie_launch_screen_dark" = "LaunchScreen-Dark";
+
+// Segues Identifier
+"segue_to_proximityFinderVC" = "ProximityFinder";
