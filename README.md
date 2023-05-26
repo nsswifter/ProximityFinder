@@ -22,6 +22,8 @@ The project implements the `Nearest Pair of Points algorithm` that finds the clo
 - Uses a `divide-and-conquer` algorithm to recursively find the closest pair of points.
 - Provides a graphical user interface to visualize the points and display the closest pair.
 
+![Demo of Algorithm](Documentation/Algorithm.mov)
+
 ## Installation
 
 To run the Nearest Pair of Points algorithm application, follow these steps:
