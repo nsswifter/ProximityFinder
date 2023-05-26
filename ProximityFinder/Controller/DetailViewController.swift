@@ -5,25 +5,41 @@
 //  Created by Mehdi Karami on 5/26/23.
 //
 
-import UIKit
+import SwiftUI
 
+// MARK: - Detail View Controller
+
+/// A Detail View Controller to display information about the application functionality.
 class DetailViewController: UIViewController {
-
+    
+    @IBOutlet weak var backgroundView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        addSwiftUIView(DynamicLinearGradientView(), to: backgroundView)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    /// Adds a SwiftUI view to the specified view.
+    /// - Parameters:
+    ///   - swiftUIView: The SwiftUI view to be added.
+    ///   - view: The UIKit view to which the SwiftUI view will be added.
+    func addSwiftUIView(_ swiftUIView: some View, to view: UIView) {
+        // Create a UIHostingController to wrap the SwiftUI view
+        let hostingController = UIHostingController(rootView: swiftUIView)
+        
+        // Add the SwiftUI view as a subview to the UIKit view
+        addChild(hostingController)
+        view.addSubview(hostingController.view)
+        
+        // Setup constraints for the hosting controller's view
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            hostingController.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            hostingController.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            hostingController.view.topAnchor.constraint(equalTo: view.topAnchor),
+            hostingController.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+        
+        hostingController.didMove(toParent: self)
     }
-    */
-
 }

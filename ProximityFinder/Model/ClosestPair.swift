@@ -7,6 +7,8 @@
 
 import CoreGraphics
 
+// MARK: - Closest Pair
+
 /// Represents a pair of points and the distance between them.
 struct ClosestPair {
     let point1: CGPoint

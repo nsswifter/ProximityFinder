@@ -7,7 +7,9 @@
 
 import CoreGraphics
 
-/// A utility struct for calculating the closest pair of points in a 2D coordinate system.
+// MARK: - Closest Pair Calculator
+
+/// A utility struct for calculating the closest pair of points in a `2D coordinate system`.
 struct ClosestPairCalculator {
     
     /// Calculates the Euclidean distance between two points in a 2D coordinate system.
