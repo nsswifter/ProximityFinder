@@ -3,6 +3,7 @@
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -23,18 +24,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqe-LO-2cV" customClass="CustomView" customModule="ProximityFinder" customModuleProvider="target">
                                 <rect key="frame" x="65" y="316" width="300" height="300"/>
                                 <subviews>
-                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cco-aK-iJ8" customClass="CustomBlurView" customModule="ProximityFinder" customModuleProvider="target">
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cco-aK-iJ8" userLabel="Coordinate Plane View" customClass="CustomBlurView" customModule="ProximityFinder" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uod-LG-bAf">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEB-Tk-jfi" userLabel="CoordinatePlane">
-                                                    <rect key="frame" x="10" y="10" width="280" height="280"/>
+                                                    <rect key="frame" x="15" y="15" width="270" height="270"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="280" id="BNE-Uh-j74"/>
-                                                        <constraint firstAttribute="height" constant="280" id="xCE-tG-haP"/>
+                                                        <constraint firstAttribute="width" constant="270" id="BNE-Uh-j74"/>
+                                                        <constraint firstAttribute="height" constant="270" id="xCE-tG-haP"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -84,8 +85,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v3d-aY-KT1" userLabel="Slider Stack View">
-                                <rect key="frame" x="37" y="696" width="356" height="35"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v3d-aY-KT1" userLabel="Slider Stack View">
+                                <rect key="frame" x="74" y="656" width="282" height="35"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ml1-jC-QtV" userLabel="Min">
                                         <rect key="frame" x="0.0" y="0.0" width="33" height="35"/>
@@ -94,110 +95,201 @@
                                             <constraint firstAttribute="height" constant="35" id="afH-hX-AWS"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
-                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="1" maxValue="49" translatesAutoresizingMaskIntoConstraints="NO" id="hcf-9m-hY9">
-                                        <rect key="frame" x="36" y="0.0" width="284" height="36"/>
+                                        <rect key="frame" x="39" y="0.0" width="204" height="36"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="280" id="5R1-uP-ui4"/>
+                                            <constraint firstAttribute="width" constant="200" id="5R1-uP-ui4"/>
                                         </constraints>
-                                        <color key="minimumTrackTintColor" red="0.31372550129999999" green="0.2901961207" blue="0.5411764979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="thumbTintColor" red="0.015042874066815308" green="0.39458152147336795" blue="0.56776751893939392" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="minimumTrackTintColor" name="SliderColor"/>
                                         <connections>
                                             <action selector="UpdateLabelValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="nMa-uG-FQD"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j7o-Vd-Sup" userLabel="Max">
-                                        <rect key="frame" x="323" y="0.0" width="33" height="35"/>
+                                        <rect key="frame" x="249" y="0.0" width="33" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="1oN-Ng-zxp"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="n9L-lc-Nvl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
-                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SB2-lU-xDY" userLabel="Pionts Stack View">
-                                <rect key="frame" x="140.33333333333337" y="736" width="149.66666666666663" height="35"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1z-Ho-FGd" userLabel="Points Status View" customClass="CustomView" customModule="ProximityFinder" customModuleProvider="target">
+                                <rect key="frame" x="105" y="706" width="220" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points Count:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2F-du-hkX" userLabel="Count">
-                                        <rect key="frame" x="0.0" y="0.0" width="116.66666666666667" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="0BJ-lH-s7k"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="ZkH-Km-hrd"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
-                                        <color key="textColor" name="AccentColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLz-JP-4iM" userLabel="Slider Label">
-                                        <rect key="frame" x="116.66666666666666" y="0.0" width="33" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="MqL-Zm-lZy"/>
-                                            <constraint firstAttribute="height" constant="35" id="cv3-Iv-CqD"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
-                                        <color key="textColor" name="AccentColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muX-DZ-ead" customClass="CustomBlurView" customModule="ProximityFinder" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="80"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SoE-ZL-y6f">
+                                            <rect key="frame" x="0.0" y="0.0" width="220" height="80"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VpB-Uw-J8f">
+                                                    <rect key="frame" x="14.666666666666671" y="5" width="190.66666666666663" height="70"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SB2-lU-xDY" userLabel="Pionts Stack View">
+                                                            <rect key="frame" x="0.0" y="0.0" width="190.66666666666666" height="35"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Points Count: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2F-du-hkX" userLabel="Count">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="157.66666666666666" height="35"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="35" id="0BJ-lH-s7k"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="ZkH-Km-hrd"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLz-JP-4iM" userLabel="Slider Label">
+                                                                    <rect key="frame" x="157.66666666666663" y="0.0" width="33" height="35"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="MqL-Zm-lZy"/>
+                                                                        <constraint firstAttribute="height" constant="35" id="cv3-Iv-CqD"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhN-Wc-Zuo" userLabel="Distance Stack View">
+                                                            <rect key="frame" x="0.0" y="35" width="190.66666666666666" height="35"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closest Distance: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cx4-Iu-WB0" userLabel="Distance ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="157.66666666666666" height="35"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="35" id="TWv-IZ-EAe"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="zgo-nM-Mtk"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAx-N3-SVM" userLabel="Slider Label">
+                                                                    <rect key="frame" x="157.66666666666663" y="0.0" width="33" height="35"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="35" id="8Bj-Sh-xnl"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="Up1-c4-SiI"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VpB-Uw-J8f" firstAttribute="centerX" secondItem="SoE-ZL-y6f" secondAttribute="centerX" id="0rG-dD-8dg"/>
+                                                <constraint firstItem="VpB-Uw-J8f" firstAttribute="centerY" secondItem="SoE-ZL-y6f" secondAttribute="centerY" id="tP3-2q-Jy8"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="regular"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </visualEffectView>
                                 </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PhN-Wc-Zuo" userLabel="Distance Stack View">
-                                <rect key="frame" x="122.00000000000001" y="759" width="186.33333333333337" height="35"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closest Distance:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cx4-Iu-WB0" userLabel="Distance ">
-                                        <rect key="frame" x="0.0" y="0.0" width="153.33333333333334" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="TWv-IZ-EAe"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="zgo-nM-Mtk"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
-                                        <color key="textColor" name="AccentColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAx-N3-SVM" userLabel="Slider Label">
-                                        <rect key="frame" x="153.33333333333331" y="0.0" width="33" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="8Bj-Sh-xnl"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="33" id="Up1-c4-SiI"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="18"/>
-                                        <color key="textColor" name="AccentColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                                <color key="backgroundColor" name="BlurBackground"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="muX-DZ-ead" secondAttribute="bottom" id="0vc-8H-B2c"/>
+                                    <constraint firstAttribute="trailing" secondItem="muX-DZ-ead" secondAttribute="trailing" id="HtW-Vm-yTA"/>
+                                    <constraint firstAttribute="width" constant="220" id="T36-6g-SBM"/>
+                                    <constraint firstAttribute="height" constant="80" id="p62-it-mT9"/>
+                                    <constraint firstItem="muX-DZ-ead" firstAttribute="top" secondItem="U1z-Ho-FGd" secondAttribute="top" id="pvD-eQ-kt2"/>
+                                    <constraint firstItem="muX-DZ-ead" firstAttribute="leading" secondItem="U1z-Ho-FGd" secondAttribute="leading" id="wKO-cN-uEc"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffset">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eqe-LO-2cV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0pq-aU-2to"/>
+                            <constraint firstItem="U1z-Ho-FGd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8WS-uZ-aSI"/>
+                            <constraint firstItem="U1z-Ho-FGd" firstAttribute="top" secondItem="v3d-aY-KT1" secondAttribute="bottom" constant="15" id="AND-Ft-kNf"/>
                             <constraint firstItem="vZP-Vc-tME" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ChF-mP-d9P"/>
                             <constraint firstItem="vZP-Vc-tME" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="Lnb-fl-nNg"/>
-                            <constraint firstItem="SB2-lU-xDY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QO5-kw-OkN"/>
-                            <constraint firstItem="SB2-lU-xDY" firstAttribute="top" secondItem="v3d-aY-KT1" secondAttribute="bottom" constant="5" id="RbI-5W-IA1"/>
-                            <constraint firstItem="PhN-Wc-Zuo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bJ9-GJ-uNa"/>
-                            <constraint firstItem="PhN-Wc-Zuo" firstAttribute="top" secondItem="SB2-lU-xDY" secondAttribute="bottom" constant="-12" id="gKO-yf-27C"/>
+                            <constraint firstItem="v3d-aY-KT1" firstAttribute="top" secondItem="eqe-LO-2cV" secondAttribute="bottom" constant="40" id="Vgb-7v-gZ1"/>
                             <constraint firstItem="v3d-aY-KT1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hav-im-lNo"/>
-                            <constraint firstItem="v3d-aY-KT1" firstAttribute="top" secondItem="eqe-LO-2cV" secondAttribute="bottom" constant="80" id="iHg-uC-uMI"/>
                             <constraint firstItem="vZP-Vc-tME" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iRL-dL-ltq"/>
                             <constraint firstItem="eqe-LO-2cV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wrh-i5-VBU"/>
                             <constraint firstItem="vZP-Vc-tME" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="xoX-wJ-CA7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Proximity Finder" id="kOf-Ck-26N"/>
+                    <navigationItem key="navigationItem" title="Proximity Finder" id="kOf-Ck-26N">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="L3j-9k-eRT">
+                            <imageReference key="image" image="info.bubble.fill" catalog="system" symbolScale="large"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="HhF-KG-D6Z">
+                                <rect key="frame" x="374" y="4" width="36" height="36.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" red="0.57315047073191916" green="0.52453017871248586" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="info.bubble.fill" catalog="system" symbolScale="large"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YYX-c5-Q9Q" kind="presentation" id="gXO-Hv-4hh"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="closestDistanceLabel" destination="RAx-N3-SVM" id="i0F-xh-qDs"/>
                         <outlet property="coordinatePlane" destination="gEB-Tk-jfi" id="yIb-kG-ZIt"/>
                         <outlet property="pointsCountLable" destination="vLz-JP-4iM" id="j3c-NS-I3p"/>
+                        <outlet property="slider" destination="hcf-9m-hY9" id="zQm-YC-Rzz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1049.3023255813953" y="-34.763948497854081"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="cDT-Gs-twQ">
+            <objects>
+                <viewController id="YYX-c5-Q9Q" customClass="DetailViewController" customModule="ProximityFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ptd-le-5UR">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FAi-lq-785"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Vi-1R-jom" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1944" y="-35"/>
         </scene>
         <!--Launch Screen Controller-->
         <scene sceneID="Vrb-AY-ykK">
@@ -249,16 +341,17 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreenBackground" width="655" height="1032"/>
+        <image name="LaunchScreenBackground" width="606" height="1021"/>
         <image name="ProximityFinderBackground" width="629" height="1005"/>
-        <namedColor name="AccentColor">
-            <color red="0.11443881989621478" green="0.041534252841567462" blue="0.36002604166666663" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
+        <image name="info.bubble.fill" catalog="system" width="128" height="110"/>
         <namedColor name="BlurBackground">
             <color red="0.90700000524520874" green="0.87099999189376831" blue="1" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Shadow">
             <color red="0.27099999785423279" green="0.16500000655651093" blue="0.48600000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SliderColor">
+            <color red="0.14100000262260437" green="0.1289999932050705" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
