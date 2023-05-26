@@ -2,6 +2,7 @@
 The project implements the `Nearest Pair of Points algorithm` that finds the closest pair of points in a 2D screen using a time complexity of `O(n log n)`. The algorithm is implemented in an iOS application using the `MVC` architectural pattern.
 
 ![Demo In Light Mode](Documentation/DemoLight.mov)
+![Demo In Dark Mode](Documentation/DemoDark.mov)
 
 ## Table of Contents
 
