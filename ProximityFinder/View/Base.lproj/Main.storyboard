@@ -248,10 +248,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Proximity Finder" id="kOf-Ck-26N">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="L3j-9k-eRT">
+                        <barButtonItem key="rightBarButtonItem" id="L3j-9k-eRT">
                             <imageReference key="image" image="info.bubble.fill" catalog="system" symbolScale="large"/>
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="HhF-KG-D6Z">
-                                <rect key="frame" x="374" y="4" width="36" height="36.333333333333336"/>
+                                <rect key="frame" x="374" y="3" width="36" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="tintColor" red="0.54939388701476832" green="0.54101452579233777" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -261,7 +261,10 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="22"/>
                                 </state>
                                 <connections>
-                                    <segue destination="YYX-c5-Q9Q" kind="presentation" id="gXO-Hv-4hh"/>
+                                    <segue destination="YYX-c5-Q9Q" kind="presentation" modalPresentationStyle="automatic" modalTransitionStyle="coverVertical" id="gXO-Hv-4hh">
+                                        <segue key="commit" inheritsFrom="parent" id="jSg-rP-Am1"/>
+                                        <segue key="preview" inheritsFrom="commit" id="OWG-gi-axf"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -284,13 +287,57 @@
                     <view key="view" contentMode="scaleToFill" id="ptd-le-5UR">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="knV-Vc-lyX">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4a-wF-Myr">
+                                <rect key="frame" x="0.0" y="10" width="430" height="902"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQs-xW-DPP" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="31"/>
+                                        <subviews>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s4d-Ry-Hzn">
+                                                <rect key="frame" x="190.66666666666666" y="0.0" width="51" height="31"/>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="s4d-Ry-Hzn" firstAttribute="centerX" secondItem="iQs-xW-DPP" secondAttribute="centerX" id="57P-LX-3os"/>
+                                            <constraint firstItem="s4d-Ry-Hzn" firstAttribute="top" secondItem="iQs-xW-DPP" secondAttribute="top" id="cv4-1m-ZEF"/>
+                                            <constraint firstAttribute="bottom" secondItem="s4d-Ry-Hzn" secondAttribute="bottom" id="n0e-uc-T09"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iQs-xW-DPP" firstAttribute="top" secondItem="L4a-wF-Myr" secondAttribute="top" id="Gyv-Bt-Gzj"/>
+                                    <constraint firstItem="iQs-xW-DPP" firstAttribute="leading" secondItem="L4a-wF-Myr" secondAttribute="leading" id="Mpo-El-zBv"/>
+                                    <constraint firstAttribute="bottom" secondItem="iQs-xW-DPP" secondAttribute="bottom" id="afy-b3-EuL"/>
+                                    <constraint firstAttribute="trailing" secondItem="iQs-xW-DPP" secondAttribute="trailing" id="zX0-8Z-sBv"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Sqr-jo-Dfv"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="wfR-ZY-cIR"/>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FAi-lq-785"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FAi-lq-785" firstAttribute="bottom" secondItem="L4a-wF-Myr" secondAttribute="bottom" constant="10" id="KeQ-8a-3Ar"/>
+                            <constraint firstItem="iQs-xW-DPP" firstAttribute="width" secondItem="ptd-le-5UR" secondAttribute="width" id="Zfo-0F-Gnb"/>
+                            <constraint firstItem="FAi-lq-785" firstAttribute="trailing" secondItem="L4a-wF-Myr" secondAttribute="trailing" id="kuB-DR-DZ4"/>
+                            <constraint firstItem="L4a-wF-Myr" firstAttribute="top" secondItem="FAi-lq-785" secondAttribute="top" constant="10" id="nR5-Bz-eKO"/>
+                            <constraint firstItem="L4a-wF-Myr" firstAttribute="leading" secondItem="FAi-lq-785" secondAttribute="leading" id="sGb-Em-mih"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="knV-Vc-lyX" id="TvS-aK-79C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Vi-1R-jom" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1944" y="-35"/>
+            <point key="canvasLocation" x="1943.7209302325582" y="-35.407725321888414"/>
         </scene>
         <!--Launch Screen Controller-->
         <scene sceneID="Vrb-AY-ykK">
@@ -341,6 +388,9 @@
             <point key="canvasLocation" x="144" y="-35"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gXO-Hv-4hh"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="LaunchScreenBackground" width="606" height="1021"/>
         <image name="ProximityFinderBackground" width="629" height="1005"/>
