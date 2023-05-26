@@ -14,9 +14,21 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var backgroundView: UIView!
     
+    @IBOutlet weak var overviewTitleLabel: UILabel!
+    @IBOutlet weak var overviewDescriptionLabel: UILabel!
+    @IBOutlet weak var overviewAlgorithmStepsLabel: UILabel!
+    @IBOutlet weak var overviewTimeArchitectureLabel: UILabel!
+    @IBOutlet weak var overviewAcknowledgmentLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addSwiftUIView(DynamicLinearGradientView(), to: backgroundView)
+        
+        overviewTitleLabel.text = "overview_title".localized
+        overviewDescriptionLabel.text = "overview_description".localized
+        overviewAlgorithmStepsLabel.text = "overview_algorithm_steps".localized
+        overviewTimeArchitectureLabel.text = "overview_time_architecture".localized
+        overviewAcknowledgmentLabel.text = "overview_acknowledgment".localized
     }
     
     /// Adds a SwiftUI view to the specified view.
@@ -42,4 +54,9 @@ class DetailViewController: UIViewController {
         
         hostingController.didMove(toParent: self)
     }
+    
+    @IBAction func dismiss(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+    
 }
