@@ -17,7 +17,7 @@ class LaunchScreenController: UIViewController {
     
     func showLottieView() {
         let animationView = LottieAnimationView(name: traitCollection.userInterfaceStyle == .light ?
-                                            "LaunchScreen-Light" : "LaunchScreen-Dark")
+                                                "lottie_launch_screen_light".localized : "lottie_launch_screen_light".localized)
         
         animationView.frame = view.bounds
         animationView.contentMode = .scaleAspectFit
@@ -25,7 +25,7 @@ class LaunchScreenController: UIViewController {
         animationView.play()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            self.performSegue(withIdentifier: "ProximityFinder", sender: nil)
+            self.performSegue(withIdentifier: "segue_to_proximityFinderVC".localized, sender: nil)
         }
     }
 }
