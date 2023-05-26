@@ -24,6 +24,11 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         addSwiftUIView(DynamicLinearGradientView(), to: backgroundView)
         
+        setup()
+    }
+    
+    /// Performs initial setup.
+    func setup() {
         overviewTitleLabel.text = "overview_title".localized
         overviewDescriptionLabel.text = "overview_description".localized
         overviewAlgorithmStepsLabel.text = "overview_algorithm_steps".localized
