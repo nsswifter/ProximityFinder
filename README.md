@@ -148,7 +148,7 @@ Contributions to the project are welcome. If you find any issues or have suggest
 
 ## Acknowledgments
 
-The `Nearest Pair of Points` algorithm project is developed by [Mehdi Karami](https://www.github.com/mehdi2003karami).
+The `Nearest Pair of Points` algorithm project is developed by [Mehdi Karami](https://www.github.com/nsswifter).
 
 ## Contact
 
