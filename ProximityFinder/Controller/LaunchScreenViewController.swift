@@ -8,10 +8,10 @@
 import UIKit
 import Lottie
 
-// MARK: - Launch Screen Controller
+// MARK: - Launch Screen View Controller
 
 /// The View Controller responsible for the launch screen.
-class LaunchScreenController: UIViewController {
+class LaunchScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

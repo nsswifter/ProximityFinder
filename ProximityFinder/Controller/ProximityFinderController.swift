@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ProximityFinderViewController.swift
 //  ProximityFinder
 //
 //  Created by Mehdi Karami on 5/18/23.
@@ -7,51 +7,40 @@
 
 import UIKit
 
-// MARK: - Proximity Finder Controller
+// MARK: - Proximity Finder View Controller
 
 /// The view controller responsible for the Proximity Finder functionality.
-class ProximityFinderController: UIViewController {
-
-    @IBOutlet weak var coordinatePlane: UIView!
+class ProximityFinderViewController: UIViewController {
     
-    @IBOutlet weak var slider: UISlider!
+    @IBOutlet private weak var coordinatePlane: UIView!
+    @IBOutlet private weak var slider: UISlider!
     
-    @IBOutlet weak var pointsCountLable: UILabel!
-    @IBOutlet weak var closestDistanceLabel: UILabel!
+    @IBOutlet private weak var pointsCountLable: UILabel!
+    @IBOutlet private weak var closestDistanceLabel: UILabel!
     
-    let closestPairCalculator = ClosestPairCalculator()
+    private let closestPairCalculator = ClosestPairCalculator()
+    private var points: [CGPoint] = []
+    private var pointsCount = 0
     
-    var points: [CGPoint] = []
-    var pointsCount = 0
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setup()
         
         generatePoints()
         calculatePoints()
     }
-    
-    /// Updates the label value and recalculates the points.
-    /// - Parameter sender: A control for selecting count of points.
-    @IBAction func UpdateLabelValue(_ sender: UISlider) {
-        pointsCountLable.text = String(lroundf(sender.value) + 1)
-        pointsCount = lroundf(sender.value)
-        
-        coordinatePlane.removePointViews()
-        points.removeAll()
-        
-        generatePoints()
-        calculatePoints()
-    }
-    
+}
+
+// MARK: - Private Methods
+
+private extension ProximityFinderViewController {
     /// Performs initial setup.
     func setup() {
         slider.setThumbImage(UIImage(named: "thumb".localized), for: .normal)
         pointsCount = lroundf(slider.value)
     }
-
+    
     /// Generates random points and displays them on the coordinate plane.
     func generatePoints() {
         for _ in 0...pointsCount {
@@ -81,3 +70,19 @@ class ProximityFinderController: UIViewController {
     }
 }
 
+// MARK: - Actions
+
+private extension ProximityFinderViewController {
+    /// Updates the label value and recalculates the points.
+    /// - Parameter sender: A control for selecting count of points.
+    @IBAction private func UpdateLabelValue(_ sender: UISlider) {
+        pointsCountLable.text = String(lroundf(sender.value) + 1)
+        pointsCount = lroundf(sender.value)
+        
+        coordinatePlane.removePointViews()
+        points.removeAll()
+        
+        generatePoints()
+        calculatePoints()
+    }
+}

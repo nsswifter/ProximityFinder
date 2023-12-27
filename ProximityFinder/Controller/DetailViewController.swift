@@ -63,5 +63,4 @@ class DetailViewController: UIViewController {
     @IBAction func dismiss(_ sender: UIButton) {
         dismiss(animated: true)
     }
-    
 }

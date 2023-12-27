@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I3K-vW-Xr1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="I3K-vW-Xr1">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +13,7 @@
         <!--Proximity Finder-->
         <scene sceneID="oOK-kW-m7c">
             <objects>
-                <viewController id="XKE-Fr-tay" customClass="ProximityFinderController" customModule="ProximityFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XKE-Fr-tay" customClass="ProximityFinderViewController" customModule="ProximityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ezt-jP-cqN">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -284,7 +284,7 @@
             <objects>
                 <viewController id="8wZ-2P-y1z" customClass="DetailViewController" customModule="ProximityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u05-ye-aE3">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="922"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8r-3U-EQk">
@@ -444,10 +444,10 @@
             </objects>
             <point key="canvasLocation" x="1943.7209302325582" y="-35.407725321888414"/>
         </scene>
-        <!--Launch Screen Controller-->
+        <!--Launch Screen View Controller-->
         <scene sceneID="5lU-pg-eix">
             <objects>
-                <viewController id="I3K-vW-Xr1" customClass="LaunchScreenController" customModule="ProximityFinder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="I3K-vW-Xr1" customClass="LaunchScreenViewController" customModule="ProximityFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lVz-JL-l8A">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
