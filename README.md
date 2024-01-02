@@ -138,7 +138,7 @@ The project has the following dependencies:
 
 ## License
 
-The Nearest Pair of Points algorithm project is licensed under the [MIT License](LICENSE).
+The `Nearest Pair of Points algorithm` project is licensed under the [MIT License](LICENSE).
 
 ## Contributing
 
