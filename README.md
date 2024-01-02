@@ -13,7 +13,6 @@ The project implements the `Nearest Pair of Points algorithm` that finds the clo
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
 - [License](#license)
-- [Contact](#contact)
 
 ## Overview
 
@@ -144,7 +143,3 @@ The Nearest Pair of Points algorithm project is licensed under the [MIT License]
 ## Contributing
 
 Contributions to the project are welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
-
-## Contact
-
-For additional information or inquiries, please contact mehdi2003karami@gmail.com.
