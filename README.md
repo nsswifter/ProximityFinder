@@ -13,7 +13,6 @@ The project implements the `Nearest Pair of Points algorithm` that finds the clo
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 - [Contact](#contact)
 
 ## Overview
@@ -145,10 +144,6 @@ The Nearest Pair of Points algorithm project is licensed under the [MIT License]
 ## Contributing
 
 Contributions to the project are welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
-
-## Acknowledgments
-
-The `Nearest Pair of Points` algorithm project is developed by [Mehdi Karami](https://www.github.com/nsswifter).
 
 ## Contact
 
