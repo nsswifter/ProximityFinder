@@ -22,7 +22,7 @@ class LaunchScreenViewController: UIViewController {
     /// Shows the Lottie animation view on the launch screen.
     func showLottieView() {
         let animationView = LottieAnimationView(name: traitCollection.userInterfaceStyle == .light ?
-                                                "lottie_launch_screen_light".localized : "lottie_launch_screen_dark".localized)
+                                                "LaunchScreen-Light" : "LaunchScreen-Dark")
         
         animationView.frame = view.bounds
         animationView.contentMode = .scaleAspectFit

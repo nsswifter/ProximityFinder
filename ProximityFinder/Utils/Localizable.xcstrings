@@ -13,28 +13,6 @@
         }
       }
     },
-    "lottie_launch_screen_dark" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "LaunchScreen-Dark"
-          }
-        }
-      }
-    },
-    "lottie_launch_screen_light" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "LaunchScreen-Light"
-          }
-        }
-      }
-    },
     "overview_acknowledgment" : {
       "extractionState" : "manual",
       "localizations" : {
