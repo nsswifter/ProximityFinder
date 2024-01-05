@@ -1,0 +1,131 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "accuracy_of_one_decimal" : {
+      "comment" : "Format Strings",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%.1f"
+          }
+        }
+      }
+    },
+    "lottie_launch_screen_dark" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LaunchScreen-Dark"
+          }
+        }
+      }
+    },
+    "lottie_launch_screen_light" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LaunchScreen-Light"
+          }
+        }
+      }
+    },
+    "overview_acknowledgment" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If you have any further questions or need assistance, feel free to ask. Happy exploring and best of luck with your Algorithm Design!"
+          }
+        }
+      }
+    },
+    "overview_algorithm_steps" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algorithm Steps:\n\n1. Sort points based on x-coordinate.\n\n2. Use closestPairRecursive function to recursively find the closest pair.\n\n3. Base case: If there are 2 or 3 points, perform brute force search for minimum distance.\n\n4. For more than 3 points, divide set into two halves and recursively call closestPairRecursive.\n\n5. Combine results from left and right halves to find the minimum distance and closest pair.\n\n6. Calculate a dividing line based on middle points and collect points within specified distance.\n\n7. Call closestPairSplit on split points to find closest pair within specified distance.\n\n8. Return the closest pair among the left, right, and split pairs."
+          }
+        }
+      }
+    },
+    "overview_description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We'll explore how the algorithm efficiently finds the nearest pair of points in a 2D screen. The Closest Pair algorithm is designed to have a time complexity of O(n log n) with a divide-and-conquer approach, making it more efficient than a brute force approach."
+          }
+        }
+      }
+    },
+    "overview_time_architecture" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This app was developed using the UIKit framework in iOS, following the MVC (Model-View-Controller) architectural pattern.\nThis pattern separates the app's components into three main parts: model, view, and controller."
+          }
+        }
+      }
+    },
+    "overview_title" : {
+      "comment" : "Detail View Controller Overview Section Texts",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proximity Finder Overview"
+          }
+        }
+      }
+    },
+    "segue_to_proximityFinderVC" : {
+      "comment" : "Segues Identifier",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ProximityFinder"
+          }
+        }
+      }
+    },
+    "thumb" : {
+      "comment" : "Assets Name",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thumb"
+          }
+        }
+      }
+    },
+    "whole_number_suffix" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ".0"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		533C5919BF4776AFD9485834 /* Pods_ProximityFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94854A2A035162AF80C46183 /* Pods_ProximityFinder.framework */; };
+		911FA3E22B48A38500F43FCE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 911FA3E12B48A38500F43FCE /* Localizable.xcstrings */; };
 		9126D8CE2A1EAE18004701BB /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126D8CA2A1EAE18004701BB /* CustomUIView.swift */; };
 		9126D8D12A1EAE18004701BB /* CustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126D8CD2A1EAE18004701BB /* CustomBlurView.swift */; };
-		912CE3A02A1E29D700D8738C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 912CE39F2A1E29D700D8738C /* Localizable.strings */; };
 		912CE3A22A1E29EB00D8738C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912CE3A12A1E29EB00D8738C /* String.swift */; };
 		914C9A4F2A20E6CA00A29342 /* DynamicLinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914C9A4E2A20E6CA00A29342 /* DynamicLinearGradientView.swift */; };
 		916EE8872A20238B00BC78BF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916EE8862A20238B00BC78BF /* DetailViewController.swift */; };
@@ -30,9 +30,9 @@
 /* Begin PBXFileReference section */
 		3F0F7C32FA7DEE35AF2FE464 /* Pods-ProximityFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityFinder.debug.xcconfig"; path = "Target Support Files/Pods-ProximityFinder/Pods-ProximityFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		71BF4A177BAB06D8BFFCBDCE /* Pods-ProximityFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximityFinder.release.xcconfig"; path = "Target Support Files/Pods-ProximityFinder/Pods-ProximityFinder.release.xcconfig"; sourceTree = "<group>"; };
+		911FA3E12B48A38500F43FCE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		9126D8CA2A1EAE18004701BB /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 		9126D8CD2A1EAE18004701BB /* CustomBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBlurView.swift; sourceTree = "<group>"; };
-		912CE39F2A1E29D700D8738C /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		912CE3A12A1E29EB00D8738C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		914C9A4E2A20E6CA00A29342 /* DynamicLinearGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicLinearGradientView.swift; sourceTree = "<group>"; };
 		916EE8862A20238B00BC78BF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			children = (
 				9126D8CD2A1EAE18004701BB /* CustomBlurView.swift */,
 				9126D8CA2A1EAE18004701BB /* CustomUIView.swift */,
-				912CE39F2A1E29D700D8738C /* Localizable.strings */,
+				911FA3E12B48A38500F43FCE /* Localizable.xcstrings */,
 				912CE39E2A1E29BF00D8738C /* Extentions */,
 				91ED1C502A1C01750095DDF2 /* LottieAnimation */,
 			);
@@ -233,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91F4394E2A15733200DD3A20 /* Assets.xcassets in Resources */,
-				912CE3A02A1E29D700D8738C /* Localizable.strings in Resources */,
+				911FA3E22B48A38500F43FCE /* Localizable.xcstrings in Resources */,
 				91F4394C2A15733000DD3A20 /* Main.storyboard in Resources */,
 				91ED1C542A1C01AA0095DDF2 /* LaunchScreen-Light.json in Resources */,
 				91ED1C522A1C01A50095DDF2 /* LaunchScreen-Dark.json in Resources */,
