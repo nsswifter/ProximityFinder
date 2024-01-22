@@ -59,6 +59,26 @@ To run the Nearest Pair of Points algorithm application, follow these steps:
 
 ## Project Structure
 
+The project follows the MVC architectural pattern and is structured as follows:
+
+- **Model**: Contains the model classes and algorithms.
+  - **ClosestPair.swift**: Represents the closest pair of points.
+  - **ClosestPairCalculator.swift**: Provides the algorithm to find the closest pair of points.
+- **View**: Contains the view-related files.
+  - **Base.lproj/Main.storyboard**: The main storyboard file containing the application's interface.
+  - **DynamicLinearGradientView.swift**: Provides a swiftUI view with a dynamic linear gradient.
+- **Controller**: Contains view controllers responsible for managing different screens.
+  - **DetailViewController.swift**: Manages the detail view screen.
+  - **LaunchScreenViewController.swift**: Manages the launch screen view.
+  - **ProximityFinderController.swift**: Manages the proximity finder screen.
+- **Utils**: Contains utility classes and extensions.
+  - **CustomBlurView.swift**: Provides a custom blur view.
+  - **CustomUIView.swift**: Provides a custom UIView.
+  - **Extensions**: Contains extensions for String and UIView.
+  - **Localizable.strings**: Contains localized strings for the application.
+  - **LottieAnimation**: Contains Lottie animation JSON files.
+
+
 <details>
  <summary>Project's Source Tree</summary>
     
@@ -114,26 +134,6 @@ To run the Nearest Pair of Points algorithm application, follow these steps:
     └── DynamicLinearGradientView.swift
 ```
 </details>
-
-The project follows the MVC architectural pattern and is structured as follows:
-
-- **Model**: Contains the model classes and algorithms.
-  - **ClosestPair.swift**: Represents the closest pair of points.
-  - **ClosestPairCalculator.swift**: Provides the algorithm to find the closest pair of points.
-- **View**: Contains the view-related files.
-  - **Base.lproj/Main.storyboard**: The main storyboard file containing the application's interface.
-  - **DynamicLinearGradientView.swift**: Provides a swiftUI view with a dynamic linear gradient.
-- **Controller**: Contains view controllers responsible for managing different screens.
-  - **DetailViewController.swift**: Manages the detail view screen.
-  - **LaunchScreenViewController.swift**: Manages the launch screen view.
-  - **ProximityFinderController.swift**: Manages the proximity finder screen.
-- **Utils**: Contains utility classes and extensions.
-  - **CustomBlurView.swift**: Provides a custom blur view.
-  - **CustomUIView.swift**: Provides a custom UIView.
-  - **Extensions**: Contains extensions for String and UIView.
-  - **Localizable.strings**: Contains localized strings for the application.
-  - **LottieAnimation**: Contains Lottie animation JSON files.
-
 
 ## Dependencies
 
