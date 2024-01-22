@@ -59,6 +59,9 @@ To run the Nearest Pair of Points algorithm application, follow these steps:
 
 ## Project Structure
 
+<details>
+ <summary>Project's Source Tree</summary>
+    
 ```bash
 .
 ├── AppDelegate.swift
@@ -110,6 +113,8 @@ To run the Nearest Pair of Points algorithm application, follow these steps:
     │   └── Main.storyboard
     └── DynamicLinearGradientView.swift
 ```
+</details>
+
 The project follows the MVC architectural pattern and is structured as follows:
 
 - **Model**: Contains the model classes and algorithms.
