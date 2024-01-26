@@ -12,15 +12,21 @@ import UIKit
 /// The view controller responsible for the Proximity Finder functionality.
 class ProximityFinderViewController: UIViewController {
     
+    // MARK: Outlets
     @IBOutlet private weak var coordinatePlane: UIView!
     @IBOutlet private weak var slider: UISlider!
     
     @IBOutlet private weak var pointsCountLable: UILabel!
     @IBOutlet private weak var closestDistanceLabel: UILabel!
     
+    // MARK: Properties
+    
+    // Private
     private let closestPairCalculator = ClosestPairCalculator()
     private var points: [CGPoint] = []
     private var pointsCount = 0
+    
+    // Public
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +38,9 @@ class ProximityFinderViewController: UIViewController {
     }
 }
 
-// MARK: - Private Methods
+// MARK: - Methods
 
+// Private
 private extension ProximityFinderViewController {
     /// Performs initial setup.
     func setup() {
@@ -75,7 +82,7 @@ private extension ProximityFinderViewController {
 private extension ProximityFinderViewController {
     /// Updates the label value and recalculates the points.
     /// - Parameter sender: A control for selecting count of points.
-    @IBAction private func UpdateLabelValue(_ sender: UISlider) {
+    @IBAction func UpdateLabelValue(_ sender: UISlider) {
         pointsCountLable.text = String(lroundf(sender.value) + 1)
         pointsCount = lroundf(sender.value)
         
