@@ -66,7 +66,11 @@ class DetailViewController: UIViewController {
         
         hostingController.didMove(toParent: self)
     }
-    
+}
+
+// MARK: - Actions
+
+private extension DetailViewController {
     @IBAction func dismiss(_ sender: UIButton) {
         dismiss(animated: true)
     }
