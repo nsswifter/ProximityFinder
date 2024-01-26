@@ -39,3 +39,6 @@ private extension LaunchScreenViewController {
         }
     }
 }
+
+// Public
+extension LaunchScreenViewController { }
