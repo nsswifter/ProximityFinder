@@ -33,7 +33,12 @@ class DetailViewController: UIViewController {
         
         setup()
     }
-    
+}
+
+// MARK: - Methods
+
+// Private
+private extension DetailViewController {
     /// Performs initial setup.
     func setup() {
         overviewTitleLabel.text = "overview_title".localized
