@@ -73,6 +73,9 @@ private extension DetailViewController {
     }
 }
 
+// Public
+extension DetailViewController { }
+
 // MARK: - Actions
 
 private extension DetailViewController {
