@@ -82,7 +82,7 @@ private extension ProximityFinderViewController {
 private extension ProximityFinderViewController {
     /// Updates the label value and recalculates the points.
     /// - Parameter sender: A control for selecting count of points.
-    @IBAction private func UpdateLabelValue(_ sender: UISlider) {
+    @IBAction func UpdateLabelValue(_ sender: UISlider) {
         pointsCountLable.text = String(lroundf(sender.value) + 1)
         pointsCount = lroundf(sender.value)
         
