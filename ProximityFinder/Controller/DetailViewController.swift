@@ -12,6 +12,7 @@ import SwiftUI
 /// A Detail View Controller to display information about the application functionality.
 class DetailViewController: UIViewController {
     
+    // MARK: Outlets
     @IBOutlet weak var backgroundView: UIView!
     
     @IBOutlet weak var overviewTitleLabel: UILabel!
@@ -20,13 +21,24 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var overviewTimeArchitectureLabel: UILabel!
     @IBOutlet weak var overviewAcknowledgmentLabel: UILabel!
     
+    // MARK: Properties
+    
+    // Private
+    
+    // Public
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addSwiftUIView(DynamicLinearGradientView(), to: backgroundView)
         
         setup()
     }
-    
+}
+
+// MARK: - Methods
+
+// Private
+private extension DetailViewController {
     /// Performs initial setup.
     func setup() {
         overviewTitleLabel.text = "overview_title".localized
@@ -59,7 +71,14 @@ class DetailViewController: UIViewController {
         
         hostingController.didMove(toParent: self)
     }
-    
+}
+
+// Public
+extension DetailViewController { }
+
+// MARK: - Actions
+
+private extension DetailViewController {
     @IBAction func dismiss(_ sender: UIButton) {
         dismiss(animated: true)
     }

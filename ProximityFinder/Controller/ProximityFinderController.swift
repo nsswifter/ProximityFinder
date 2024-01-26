@@ -77,6 +77,9 @@ private extension ProximityFinderViewController {
     }
 }
 
+// Public
+extension ProximityFinderViewController { }
+
 // MARK: - Actions
 
 private extension ProximityFinderViewController {
