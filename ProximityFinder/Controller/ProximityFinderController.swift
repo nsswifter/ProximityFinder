@@ -20,6 +20,7 @@ class ProximityFinderViewController: UIViewController {
     @IBOutlet private weak var closestDistanceLabel: UILabel!
     
     // MARK: Properties
+    
     // Private
     private let closestPairCalculator = ClosestPairCalculator()
     private var points: [CGPoint] = []
@@ -37,8 +38,9 @@ class ProximityFinderViewController: UIViewController {
     }
 }
 
-// MARK: - Private Methods
+// MARK: - Methods
 
+// Private
 private extension ProximityFinderViewController {
     /// Performs initial setup.
     func setup() {
