@@ -18,7 +18,12 @@ class LaunchScreenViewController: UIViewController {
         
         showLottieView()
     }
-    
+}
+
+// MARK: - Methods
+
+// Private
+private extension LaunchScreenViewController {
     /// Shows the Lottie animation view on the launch screen.
     func showLottieView() {
         let animationView = LottieAnimationView(name: traitCollection.userInterfaceStyle == .light ?
