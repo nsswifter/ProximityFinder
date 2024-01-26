@@ -1,8 +1,8 @@
 //
 //  CustomBlurView.swift
-//  UIKit for iOS 15
+//  ProximityFinder
 //
-//  Created by Sai Kambampati on 11/1/21.
+//  Created by Mehdi Karami on 5/26/23.
 //
 
 import UIKit
