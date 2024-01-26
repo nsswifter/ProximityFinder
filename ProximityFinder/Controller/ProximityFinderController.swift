@@ -12,15 +12,20 @@ import UIKit
 /// The view controller responsible for the Proximity Finder functionality.
 class ProximityFinderViewController: UIViewController {
     
+    // MARK: Outlets
     @IBOutlet private weak var coordinatePlane: UIView!
     @IBOutlet private weak var slider: UISlider!
     
     @IBOutlet private weak var pointsCountLable: UILabel!
     @IBOutlet private weak var closestDistanceLabel: UILabel!
     
+    // MARK: Properties
+    // Private
     private let closestPairCalculator = ClosestPairCalculator()
     private var points: [CGPoint] = []
     private var pointsCount = 0
+    
+    // Public
     
     override func viewDidLoad() {
         super.viewDidLoad()
