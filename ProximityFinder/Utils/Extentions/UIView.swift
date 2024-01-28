@@ -18,7 +18,7 @@ extension UIView {
             pointView.center = point
             pointView.layer.cornerRadius = pointView.frame.width / 2
             pointView.backgroundColor = color
-            self.addSubview(pointView)
+            addSubview(pointView)
         }
     }
     
