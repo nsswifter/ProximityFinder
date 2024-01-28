@@ -16,15 +16,15 @@ struct DynamicLinearGradientView: View {
     @Environment(\.colorScheme) private var colorScheme
     
     // The starting point of the gradient.
-    @State var start = UnitPoint(x: -0.5, y: -2)
+    @State private var start = UnitPoint(x: -0.5, y: -2)
     // The ending point of the gradient.
-    @State var end = UnitPoint(x: 4, y: 0)
+    @State private var end = UnitPoint(x: 4, y: 0)
     
     // A timer that triggers a change in the gradient's start and end points.
-    let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
+    private let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
     
-    var lightModeColors = [Color.indigo, .white, .purple, .white, .indigo, .white]
-    var darkModeColors = [Color.indigo, .black, .purple, .black, .indigo, .black]
+    private var lightModeColors = [Color.indigo, .white, .purple, .white, .indigo, .white]
+    private var darkModeColors = [Color.indigo, .black, .purple, .black, .indigo, .black]
     
     var body: some View {
         LinearGradient(gradient: Gradient(colors: colorScheme == .dark ?
