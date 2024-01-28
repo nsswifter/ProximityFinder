@@ -50,8 +50,6 @@ struct DynamicLinearGradientView: View {
 
 // MARK: - Dynamic Linear Gradient View Preview
 
-struct DynamicLinearGradient_Previews: PreviewProvider {
-    static var previews: some View {
-        DynamicLinearGradientView()
-    }
+#Preview("Dynamic Linear Gradient View") {
+    DynamicLinearGradientView()
 }
