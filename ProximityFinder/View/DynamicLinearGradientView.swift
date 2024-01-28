@@ -12,6 +12,9 @@ import SwiftUI
 /// A SwiftUI view that renders a linear gradient with changing colors and animation.
 struct DynamicLinearGradientView: View {
     
+    // MARK: Properties
+    
+    // Private
     // The environment color scheme, used to determine the gradient colors to use.
     @Environment(\.colorScheme) private var colorScheme
     
@@ -26,6 +29,7 @@ struct DynamicLinearGradientView: View {
     private var lightModeColors = [Color.indigo, .white, .purple, .white, .indigo, .white]
     private var darkModeColors = [Color.indigo, .black, .purple, .black, .indigo, .black]
     
+    // Public
     var body: some View {
         LinearGradient(gradient: Gradient(colors: colorScheme == .dark ?
                                           darkModeColors : lightModeColors),
