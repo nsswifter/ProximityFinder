@@ -39,10 +39,10 @@ struct DynamicLinearGradientView: View {
         .animation(Animation.easeInOut(duration: 10)
             .repeatForever(autoreverses: true).speed(2), value: end)
         .onReceive(timer, perform: { _ in
-            self.start = UnitPoint(x: 4, y: 0)
-            self.end = UnitPoint(x: 0, y: 2)
-            self.start = UnitPoint(x: -4, y: 20)
-            self.start = UnitPoint(x: 4, y: 0)
+            start = UnitPoint(x: 4, y: 0)
+            end = UnitPoint(x: 0, y: 2)
+            start = UnitPoint(x: -4, y: 20)
+            start = UnitPoint(x: 4, y: 0)
         })
         .ignoresSafeArea()
     }
