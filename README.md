@@ -34,7 +34,7 @@ Whether you're a curious learner, an algorithm enthusiast, or a student of algor
 
 - Calculates the Euclidean distance between two points in a 2D coordinate system.
 - Finds the nearest pair of points in a given array of `CGPoint` using `CoreGraphics`.
-- Uses a `divide-and-conquer` algorithm to recursively find the closest pair of points.
+- Uses a `Divide and Conquer` algorithm to recursively find the closest pair of points.
 - Provides a graphical user interface to visualize the points and display the closest pair.
 
 ![Demo of Algorithm](Documentation/Algorithm.png)
