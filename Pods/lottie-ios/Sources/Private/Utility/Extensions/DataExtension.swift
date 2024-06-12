@@ -5,7 +5,6 @@
 //  Created by René Fouquet on 03.05.21.
 //
 
-import Foundation
 #if canImport(UIKit)
 import UIKit
 #elseif canImport(AppKit)
@@ -23,15 +22,12 @@ extension Data {
       throw DotLottieError.assetNotFound(name: assetName, bundle: bundle)
     }
     #else
-    if #available(macOS 10.11, *) {
-      if let asset = NSDataAsset(name: assetName, bundle: bundle) {
-        self = asset.data
-        return
-      } else {
-        throw DotLottieError.assetNotFound(name: assetName, bundle: bundle)
-      }
+    if let asset = NSDataAsset(name: assetName, bundle: bundle) {
+      self = asset.data
+      return
+    } else {
+      throw DotLottieError.assetNotFound(name: assetName, bundle: bundle)
     }
-    throw DotLottieError.loadingFromAssetNotSupported
     #endif
   }
 }

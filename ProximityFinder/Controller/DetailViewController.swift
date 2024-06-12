@@ -26,7 +26,7 @@ class DetailViewController: UIViewController {
     // Private
     
     // Public
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         addSwiftUIView(DynamicLinearGradientView(), to: backgroundView)
