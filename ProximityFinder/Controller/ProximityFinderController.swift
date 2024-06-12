@@ -61,9 +61,7 @@ private extension ProximityFinderViewController {
     
     /// Calculates the closest pair of points and updates the coordinate plane.
     func calculatePoints() {
-        let closestPair = closestPairCalculator.closestPair(points)
-        
-        if let closestPair {
+        if let closestPair = closestPairCalculator.closestPair(points) {
             coordinatePlane.drawPoint(from: [closestPair.point1, closestPair.point2], withColor: .red)
             
             var distance = String(format: "accuracy_of_one_decimal".localized, closestPair.distance)
